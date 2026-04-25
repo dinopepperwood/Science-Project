@@ -10,6 +10,7 @@ size = Vector2(1147.5, 224)
 script = ExtResource("1_njov2")
 
 [node name="Box" parent="." unique_id=2140527571 instance=ExtResource("1_myinc")]
+position = Vector2(372, 185)
 mass = 1.0
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=3854229]
@@ -26,4 +27,4 @@ position = Vector2(575.25, 537)
 shape = SubResource("RectangleShape2D_njov2")
 
 [node name="Box2" parent="." unique_id=353070787 instance=ExtResource("1_myinc")]
-position = Vector2(403, 38)
+position = Vector2(793, 185)

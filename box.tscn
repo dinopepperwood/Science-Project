@@ -23,34 +23,38 @@ physics_material_override = SubResource("PhysicsMaterial_oyhfb")
 script = ExtResource("1_g2tbl")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1326855785]
-position = Vector2(459.625, 245.75002)
+texture_filter = 1
 scale = Vector2(2.6484382, 2.9531238)
 texture = SubResource("GradientTexture2D_myinc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1113838371]
-position = Vector2(459.5, 245.75)
+texture_filter = 1
 shape = SubResource("RectangleShape2D_oyhfb")
 
 [node name="Label" type="Label" parent="." unique_id=1719018405]
-offset_left = 399.0
-offset_top = 124.0
-offset_right = 634.0
-offset_bottom = 177.0
+texture_filter = 1
+offset_left = -60.0
+offset_top = -124.0
+offset_right = 175.0
+offset_bottom = -49.0
 text = "Acceleration: 0 m/s²
-Velocity: 0 m/s"
+Velocity: 0 m/s
+Mass: 5 kg"
 
 [node name="Click" type="TextureButton" parent="." unique_id=992380832]
-offset_left = 416.0
-offset_top = 199.0
-offset_right = 502.0
-offset_bottom = 293.0
+texture_filter = 1
+offset_left = -43.0
+offset_top = -47.0
+offset_right = 43.0
+offset_bottom = 47.0
 
 [node name="Outline" type="ReferenceRect" parent="." unique_id=904778675]
 visible = false
-offset_left = 416.0
-offset_top = 198.0
-offset_right = 503.0
-offset_bottom = 294.0
+texture_filter = 1
+offset_left = -43.0
+offset_top = -48.0
+offset_right = 43.0
+offset_bottom = 48.0
 border_color = Color(0.09188115, 0.4544065, 0.999993, 1)
 editor_only = false
 
