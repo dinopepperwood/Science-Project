@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://ctjpi8yajhnre"]
+
+[ext_resource type="PackedScene" uid="uid://ctfsy3337h7px" path="res://box.tscn" id="1_myinc"]
+[ext_resource type="Script" uid="uid://cpliujug4cr5c" path="res://test.gd" id="1_njov2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_njov2"]
+size = Vector2(1147.5, 224)
+
+[node name="Node2D" type="Node2D" unique_id=1894495481]
+script = ExtResource("1_njov2")
+
+[node name="Box" parent="." unique_id=2140527571 instance=ExtResource("1_myinc")]
+mass = 1.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=3854229]
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=147676623]
+offset_left = 2.0
+offset_top = 425.0
+offset_right = 1150.0
+offset_bottom = 647.0
+color = Color(0.6789437, 0.6789437, 0.6789437, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=407080016]
+position = Vector2(575.25, 537)
+shape = SubResource("RectangleShape2D_njov2")
+
+[node name="Box2" parent="." unique_id=353070787 instance=ExtResource("1_myinc")]
+position = Vector2(403, 38)
