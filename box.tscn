@@ -45,4 +45,13 @@ offset_top = 199.0
 offset_right = 502.0
 offset_bottom = 293.0
 
+[node name="Outline" type="ReferenceRect" parent="." unique_id=904778675]
+visible = false
+offset_left = 416.0
+offset_top = 198.0
+offset_right = 503.0
+offset_bottom = 294.0
+border_color = Color(0.09188115, 0.4544065, 0.999993, 1)
+editor_only = false
+
 [connection signal="pressed" from="Click" to="." method="_on_click_pressed"]
