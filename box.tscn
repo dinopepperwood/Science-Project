@@ -18,6 +18,7 @@ height = 32
 size = Vector2(88, 99)
 
 [node name="Box" type="RigidBody2D" unique_id=2140527571]
+input_pickable = true
 mass = 5.0
 physics_material_override = SubResource("PhysicsMaterial_oyhfb")
 script = ExtResource("1_g2tbl")
@@ -43,14 +44,8 @@ Velocity: 0 m/s
 Mass: 5 kg
 Force: 1 N"
 
-[node name="Click" type="TextureButton" parent="." unique_id=992380832]
-texture_filter = 1
-offset_left = -43.0
-offset_top = -47.0
-offset_right = 43.0
-offset_bottom = 47.0
-
 [node name="Outline" type="ReferenceRect" parent="." unique_id=904778675]
+visible = false
 texture_filter = 1
 offset_left = -43.0
 offset_top = -48.0
@@ -60,5 +55,4 @@ border_color = Color(0.09188115, 0.4544065, 0.999993, 1)
 border_width = 3.0
 editor_only = false
 
-[connection signal="pressed" from="Click" to="." method="_on_click_pressed"]
-[connection signal="toggled" from="Click" to="." method="_on_click_toggled"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

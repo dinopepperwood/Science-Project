@@ -13,8 +13,10 @@ func _physics_process(delta: float) -> void:
 		outline.visible=false
 
 
-func _on_click_pressed() -> void:
-	if(Global.current == self):
-		print("Hi")
+
+
+func _on_mouse_entered() -> void:
 	if(Global.current != self):
 		Global.current = self
+	elif(Global.current == self):
+		Global.current = null
