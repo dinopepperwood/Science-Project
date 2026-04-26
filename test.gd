@@ -15,6 +15,8 @@ func _input(event: InputEvent) -> void:
 			Global.current.force-=1
 		elif Input.is_action_just_pressed("Push"):
 			Global.current.apply_central_impulse(Vector2(Global.current.force,0))
+		elif Input.is_action_just_pressed("Restart"):
+			get_tree().reload_current_scene()
 
 func _physics_process(delta: float) -> void:
 	pass
