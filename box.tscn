@@ -15,7 +15,7 @@ width = 32
 height = 32
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oyhfb"]
-size = Vector2(85, 92.5)
+size = Vector2(88, 99)
 
 [node name="Box" type="RigidBody2D" unique_id=2140527571]
 mass = 5.0
@@ -29,6 +29,7 @@ texture = SubResource("GradientTexture2D_myinc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1113838371]
 texture_filter = 1
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_oyhfb")
 
 [node name="Label" type="Label" parent="." unique_id=1719018405]
@@ -50,13 +51,14 @@ offset_right = 43.0
 offset_bottom = 47.0
 
 [node name="Outline" type="ReferenceRect" parent="." unique_id=904778675]
-visible = false
 texture_filter = 1
 offset_left = -43.0
 offset_top = -48.0
 offset_right = 43.0
 offset_bottom = 48.0
 border_color = Color(0.09188115, 0.4544065, 0.999993, 1)
+border_width = 3.0
 editor_only = false
 
 [connection signal="pressed" from="Click" to="." method="_on_click_pressed"]
+[connection signal="toggled" from="Click" to="." method="_on_click_toggled"]

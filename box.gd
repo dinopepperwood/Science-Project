@@ -14,4 +14,7 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_click_pressed() -> void:
-	Global.current = self
+	if(Global.current == self):
+		print("Hi")
+	if(Global.current != self):
+		Global.current = self
