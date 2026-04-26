@@ -18,5 +18,8 @@ func _physics_process(delta: float) -> void:
 func _on_mouse_entered() -> void:
 	if(Global.current != self):
 		Global.current = self
-	elif(Global.current == self):
+
+
+func _on_mouse_exited() -> void:
+	if(Global.current == self):
 		Global.current = null
