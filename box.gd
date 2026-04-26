@@ -6,8 +6,7 @@ func _ready():
 	pass
 
 func _physics_process(delta: float) -> void:
-	label.text = "Acceleration: "+str(snapped(force/self.mass,0.01))+" m/s²\nSpeed: "+str(snapped(linear_velocity.length(),0.01)) +"m/s\nMass: "+str(self.mass)+" kg"
-	apply_central_force(Vector2(force,0))
+	label.text = "Acceleration: "+str(snapped(force/self.mass,0.01))+" m/s²\nSpeed: "+str(snapped(linear_velocity.length(),0.01)) +"m/s\nMass: "+str(self.mass)+" kg\nForce: " + str(force) + " N"
 	if(Global.current == self):
 		outline.visible=true
 	else:

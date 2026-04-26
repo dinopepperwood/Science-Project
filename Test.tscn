@@ -10,7 +10,7 @@ size = Vector2(1147.5, 224)
 script = ExtResource("1_njov2")
 
 [node name="Box" parent="." unique_id=2140527571 instance=ExtResource("1_myinc")]
-position = Vector2(372, 185)
+position = Vector2(582, 185)
 mass = 1.0
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=3854229]
@@ -25,6 +25,3 @@ color = Color(0.6789437, 0.6789437, 0.6789437, 1)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=407080016]
 position = Vector2(575.25, 537)
 shape = SubResource("RectangleShape2D_njov2")
-
-[node name="Box2" parent="." unique_id=353070787 instance=ExtResource("1_myinc")]
-position = Vector2(793, 185)

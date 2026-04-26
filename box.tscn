@@ -33,13 +33,14 @@ shape = SubResource("RectangleShape2D_oyhfb")
 
 [node name="Label" type="Label" parent="." unique_id=1719018405]
 texture_filter = 1
-offset_left = -60.0
-offset_top = -124.0
-offset_right = 175.0
-offset_bottom = -49.0
+offset_left = -53.0
+offset_top = -152.0
+offset_right = 182.0
+offset_bottom = -51.0
 text = "Acceleration: 0 m/s²
 Velocity: 0 m/s
-Mass: 5 kg"
+Mass: 5 kg
+Force: 1 N"
 
 [node name="Click" type="TextureButton" parent="." unique_id=992380832]
 texture_filter = 1
